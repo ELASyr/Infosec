@@ -1,0 +1,9 @@
+From: hr@yourcompany.com
+Subject: Urgent: Open new payroll attachment
+
+Hi,
+Please open attached payroll.xls to confirm your salary details. If not updated we will suspend access.
+Attachment: payroll_update.xls
+
+Thanks
+HR
