@@ -1,3 +1,0 @@
-Learning Vim is a very useful skill for anyone.
-Practicing commands like deleting lines, copying, pasting.
-Practicing commands like deleting lines, copying, pasting.
