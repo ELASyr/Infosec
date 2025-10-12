@@ -1,0 +1,32 @@
+  293  touch file.txt
+  294  ls -la
+  295  chmod 754 file.txt
+  296  ls -la
+  297  sudo chown new_owner file.txt
+  298  sudo chgrp new_group file.txt
+  299  sudo chgrp students file.txt
+  300  echo "test" >> file.txt
+  301  sudo chown student2:students file.txt
+  302  echo "This is a demo file" > file.txt
+  303  ls -l file.txt
+  304  stat file.txt
+  305  sudo adduser alice
+  306  sudo adduser bob
+  307  sudo groupadd developers
+  308  sudo chown alice:devs file.txt
+  309  chmod 640 file.txt
+  310  ls -l file.txt
+  311  sudo chown alice:developers file.txt
+  312  chmod 640 file.txt
+  313  ls -l file.txt
+  314  sudo usermod -aG developers bob
+  315  sudo -u bob cat file.txt || echo "bob read denied"
+  316  sudo -u bob bash -c "echo 'append' >> file.txt" || echo "bob write denied"
+  317  cd ~/Infosec/lab6/lab6-permissions
+  318  mkdir -p lab6/lab6-permissions
+  319  cd ~/Infosec/lab6/lab6-permissions
+  320  cd lab6-permissions
+  321  history | tail -n 83 > lab6_permissions.txt
+  322  ls
+  323  cat lab6_permissions.txt
+  324  history | tail -n 32 > lab6_permissions.txt
