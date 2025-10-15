@@ -1,0 +1,149 @@
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec$ cd lab05
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo adduser user1
+sudo adduser user2
+sudo groupadd developers
+[sudo] password for user_elaman11:
+info: Adding user `user1' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user1' (1007) ...
+info: Adding new user `user1' (1007) with group `user1 (1007)' ...
+info: Creating home directory `/home/user1' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user1
+Enter the new value, or press ENTER for the default
+        Full Name []: dev1
+        Room Number []: 11
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `user1' to supplemental / extra groups `users' ...
+info: Adding user `user1' to group `users' ...
+info: Adding user `user2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user2' (1008) ...
+info: Adding new user `user2' (1008) with group `user2 (1008)' ...
+info: Creating home directory `/home/user2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user2
+Enter the new value, or press ENTER for the default
+        Full Name []: dev2
+        Room Number []: 11
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `user2' to supplemental / extra groups `users' ...
+info: Adding user `user2' to group `users' ...
+groupadd: group 'developers' already exists
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo usermod -aG developers user1
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ groups user1
+user1 : user1 users developers
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo mkdir /home/shared_folder
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo chown :developers /home/shared_folder
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo chmod 770 /home/shared_folder
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ ls -ld /home/shared_folder
+drwxrwx--- 2 root developers 4096 Oct 15 19:59 /home/shared_folder
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ su - user1
+cd /home/shared_folder
+touch test.txt
+ls
+Password:
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 15 20:00:21 +05 2025
+
+  System load:  0.12                Processes:             40
+  Usage of /:   0.3% of 1006.85GB   Users logged in:       1
+  Memory usage: 11%                 IPv4 address for eth0: 172.23.163.226
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/user1/.hushlogin file.
+user1@WIN-MJVG6L6654H:~$ su - user2
+cd /home/shared_folder
+Password:
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct 15 20:00:42 +05 2025
+
+  System load:  0.09                Processes:             42
+  Usage of /:   0.3% of 1006.85GB   Users logged in:       1
+  Memory usage: 11%                 IPv4 address for eth0: 172.23.163.226
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/user2/.hushlogin file.
+user2@WIN-MJVG6L6654H:~$ exit
+logout
+user1@WIN-MJVG6L6654H:/home/shared_folder$ exit
+logout
+-bash: cd: /home/shared_folder: Permission denied
+Readme.md  groups  screenshots  test.txt
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ ls
+Readme.md  groups  screenshots  test.txt
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ su - user2
+cd /home/shared_folder
+Password:
+user2@WIN-MJVG6L6654H:~$ exit
+logout
+-bash: cd: /home/shared_folder: Permission denied
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo pkill -KILL -u user1
+sudo deluser --remove-home --force user1
+[sudo] password for user_elaman11:
+Unknown option: force
+deluser [--system] [--remove-home] [--remove-all-files] [--backup]
+        [--backup-to dir] [--backup-suffix str] [--conf file]
+        [--quiet] [--verbose] [--debug] user
+
+  remove a normal user from the system
+
+deluser --group [--system] [--only-if-empty] [--conf file] [--quiet]
+        [--verbose] [--debug] group
+delgroup [--system] [--only-if-empty] [--conf file] [--quiet]
+         [--verbose] [--debug] group
+  remove a group from the system
+
+deluser [--conf file] [--quiet] [--verbose] [--debug] user group
+  remove the user from a group
+(venv) user_elaman11@WIN-MJVG6L6654H:~/Infosec/lab05$ sudo pkill -KILL -u user2
+sudo deluser --remove-home --force user2
+Unknown option: force
+deluser [--system] [--remove-home] [--remove-all-files] [--backup]
+        [--backup-to dir] [--backup-suffix str] [--conf file]
+        [--quiet] [--verbose] [--debug] user
+
+  remove a normal user from the system
+
+deluser --group [--system] [--only-if-empty] [--conf file] [--quiet]
+        [--verbose] [--debug] group
+delgroup [--system] [--only-if-empty] [--conf file] [--quiet]
+         [--verbose] [--debug] group
+  remove a group from the system
+
+deluser [--conf file] [--quiet] [--verbose] [--debug] user group
+  remove the user from a group
