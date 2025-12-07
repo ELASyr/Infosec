@@ -1,0 +1,9 @@
+From: support@paypaI.com
+Subject: Your account is suspended - action required
+
+Dear Customer,
+We detected suspicious activity. Click this link to restore access:
+http://paypa1-secure-login.com/verify
+
+Regards,
+PayPal Support Team

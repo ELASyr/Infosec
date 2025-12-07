@@ -1,0 +1,19 @@
+Sample Results
+
+Hello World
+
+file1.txt
+file2.txt
+file3.txt
+
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit..."
+  },
+  ...
+]
+
+filename.json created with GET request

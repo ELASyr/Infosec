@@ -1,0 +1,81 @@
+Script started on 2025-10-15 21:52:27+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mtouch file1.txt file2.txt file3.txt[27mtouch file1.txt file2.txt file3.txt
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mmkdir dir1 dir2 dir3[27mmkdir dir1 dir2 dir3
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mls -la[27mls -la
+[?2004ltotal 36
+drwxr-xr-x  7 user_elaman11 user_elaman11 4096 Oct 15 21:52 [0m[01;34m.[0m
+drwxr-xr-x 19 user_elaman11 user_elaman11 4096 Oct 15 21:41 [01;34m..[0m
+-rw-r--r--  1 user_elaman11 user_elaman11  426 Oct 12 20:29 README.md
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir1[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir2[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir3[0m
+-rwxr-xr--  1 alice         developers      20 Oct 12 20:37 [01;32mfile.txt[0m
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 file1.txt
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 file2.txt
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 file3.txt
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 lab06_session.txt
+drwxr-xr-x  3 user_elaman11 user_elaman11 4096 Oct 12 20:49 [01;34mlab6[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 12 20:50 [01;34mlab6-permissions[0m
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mchmod 754 file1.txt[27m
+[7mchmod 700 dir1          chmod 775 dir2 [27m[A]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ chmod 754 file1.txt
+chmod 700 dir1          chmod 775 dir2 
+[?2004lchmod: cannot access 'chmod': No such file or directory
+chmod: cannot access '775': No such file or directory
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mchmod 754 file1.txt[27mchmod 754 file1.txt
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mchmod 700 dir1[27mchmod 700 dir1
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mchmod 775 dir2[27mchmod 775 dir2
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mls -la[27mls -la
+[?2004ltotal 36
+drwxr-xr-x  7 user_elaman11 user_elaman11 4096 Oct 15 21:52 [0m[01;34m.[0m
+drwxr-xr-x 19 user_elaman11 user_elaman11 4096 Oct 15 21:41 [01;34m..[0m
+-rw-r--r--  1 user_elaman11 user_elaman11  426 Oct 12 20:29 README.md
+drwx------  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir1[0m
+drwxrwxr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir2[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir3[0m
+-rwxr-xr--  1 alice         developers      20 Oct 12 20:37 [01;32mfile.txt[0m
+-rwxr-xr--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 [01;32mfile1.txt[0m
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 file2.txt
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 file3.txt
+-rw-r--r--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 lab06_session.txt
+drwxr-xr-x  3 user_elaman11 user_elaman11 4096 Oct 12 20:49 [01;34mlab6[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 12 20:50 [01;34mlab6-permissions[0m
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7msudo chown user1 file2.txt[27msudo chown user1 file2.txt
+[?2004l[sudo] password for user_elaman11: 
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7msudo chgrp developers file3.txt[27msudo chgrp developers file3.txt
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mls -la[27mls -la
+[?2004ltotal 40
+drwxr-xr-x  7 user_elaman11 user_elaman11 4096 Oct 15 21:52 [0m[01;34m.[0m
+drwxr-xr-x 19 user_elaman11 user_elaman11 4096 Oct 15 21:41 [01;34m..[0m
+-rw-r--r--  1 user_elaman11 user_elaman11  426 Oct 12 20:29 README.md
+drwx------  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir1[0m
+drwxrwxr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir2[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir3[0m
+-rwxr-xr--  1 alice         developers      20 Oct 12 20:37 [01;32mfile.txt[0m
+-rwxr-xr--  1 user_elaman11 user_elaman11    0 Oct 15 21:52 [01;32mfile1.txt[0m
+-rw-r--r--  1 user1         user_elaman11    0 Oct 15 21:52 file2.txt
+-rw-r--r--  1 user_elaman11 developers       0 Oct 15 21:52 file3.txt
+-rw-r--r--  1 user_elaman11 user_elaman11 4096 Oct 15 21:55 lab06_session.txt
+drwxr-xr-x  3 user_elaman11 user_elaman11 4096 Oct 12 20:49 [01;34mlab6[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 12 20:50 [01;34mlab6-permissions[0m
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7msu - user1[27msu - user1
+[?2004lPassword: 
+[?2004h]0;user1@WIN-MJVG6L6654H: ~[01;32muser1@WIN-MJVG6L6654H[00m:[01;34m~[00m$ [7mcd ~/Infosec/lab06[27mcd ~/Infosec/lab06
+[?2004l-bash: cd: /home/user1/Infosec/lab06: No such file or directory
+[?2004h]0;user1@WIN-MJVG6L6654H: ~[01;32muser1@WIN-MJVG6L6654H[00m:[01;34m~[00m$ exit
+[?2004llogout
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ ls
+[?2004lREADME.md  [0m[01;34mdir1[0m  [01;34mdir2[0m  [01;34mdir3[0m  [01;32mfile.txt[0m  [01;32mfile1.txt[0m  file2.txt  file3.txt  lab06_session.txt  [01;34mlab6[0m  [01;34mlab6-permissions[0m
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ nanot[K[K[K[K[Kcat lab07[K6_session.txt
+[?2004lScript started on 2025-10-15 21:52:27+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mtouch file1.txt file2.txt file3.txt[27mtouch file1.txt file2.txt file3.txt
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mmkdir dir1 dir2 dir3[27mmkdir dir1 dir2 dir3
+[?2004l[?2004h]0;user_elaman11@WIN-MJVG6L6654H: ~/Infosec/lab06[01;32muser_elaman11@WIN-MJVG6L6654H[00m:[01;34m~/Infosec/lab06[00m$ [7mls -la[27mls -la
+[?2004ltotal 36
+drwxr-xr-x  7 user_elaman11 user_elaman11 4096 Oct 15 21:52 [0m[01;34m.[0m
+drwxr-xr-x 19 user_elaman11 user_elaman11 4096 Oct 15 21:41 [01;34m..[0m
+-rw-r--r--  1 user_elaman11 user_elaman11  426 Oct 12 20:29 README.md
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir1[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir2[0m
+drwxr-xr-x  2 user_elaman11 user_elaman11 4096 Oct 15 21:52 [01;34mdir3[0m
+-rwxr-xr--  1 alice         developers      20 Oct 12 20:37 [01;32mfile.txt[0m
+-rw-r--r--  1 user_elama

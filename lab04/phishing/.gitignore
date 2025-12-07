@@ -1,0 +1,5 @@
+login_data.txt
+*.pyc
+__pycache__/
+.env
+

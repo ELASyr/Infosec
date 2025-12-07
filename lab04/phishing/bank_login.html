@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Banking Portal — SIMULATION</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f2f2f2; }
+    .card { background:white; width:360px; margin:80px auto; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+    label { display:block; margin:10px 0 5px; }
+    input[type=text], input[type=password] { width:100%; padding:8px; box-sizing:border-box; }
+    .warn { color:red; font-weight:bold; margin-bottom:10px; }
+    button { margin-top:12px; padding:10px 16px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Banking Portal — SIMULATION</h2>
+    <p class="warn">THIS IS A LAB SIMULATION — DO NOT ENTER REAL PASSWORDS OR CARD NUMBERS</p>
+    <form method="post" action="/submit">
+      <label for="user">Username or Card number</label>
+      <input id="user" name="username" type="text" required />
+      <label for="pass">Password / PIN</label>
+      <input id="pass" name="password" type="password" required />
+      <label for="cvv">CVV (fake only)</label>
+      <input id="cvv" name="cvv" type="text" />
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+</body>
+</html>
