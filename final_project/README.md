@@ -61,7 +61,7 @@ https://t.me/@elaman_personalexpenses_bot
 
 ## Directory Layout
 
-```text
+```text 
 final_project/
 ├── database/
 │   └── expenses.db
@@ -83,7 +83,9 @@ final_project/
 │   └── bot.py
 │
 └── README.md
+---
 
+```
 ## 🔗 Video Demonstration
 
 You can watch the full implementation and usage of the Personal Expenses Tracker here:
