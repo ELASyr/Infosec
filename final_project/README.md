@@ -1,6 +1,7 @@
 # Personal Expenses Reports Helper
 
 Made by: Elaman Abdulloev
+
 Course: Information Security — Final Project
 
 This project is a personal expense-tracking utility designed for the AUCA Information Security course.
@@ -49,17 +50,29 @@ SQLite database (expenses.db)
 Protected with parameterized SQL queries
 
 Tokens stored safely in .env
+## Telegram Bot Access
+
+Scan the QR code below to open the Telegram bot:
+
+![Telegram Bot QR Code](final_project/screenshots/telegram_qr.png)
+
+Or open directly:
+https://t.me/@elaman_personalexpenses_bot
 
 ## Directory Layout
+
+```text
 final_project/
 ├── database/
 │   └── expenses.db
+│
 ├── screenshots/
 │   ├── add_expense.png
 │   ├── stats.png
 │   ├── chart.png
 │   ├── cron.png
 │   └── telegram.png
+│
 ├── src/
 │   ├── add_expense.py
 │   ├── show_expenses.py
@@ -68,9 +81,10 @@ final_project/
 │   ├── send_weekly_report.py
 │   ├── menu.py
 │   └── bot.py
+│
 └── README.md
 
-##🔗 Video Demonstration
+## 🔗 Video Demonstration
 
 You can watch the full implementation and usage of the Personal Expenses Tracker here:
 
@@ -106,6 +120,6 @@ Local database only (no cloud exposure)
 
 ## Conclusion
 
-This project fulfills all requirements of the AUCA Information Security final assignment.
+This project fulfills all requirements of the Information Security final assignment.
 It demonstrates secure programming, automation with cron, Telegram bot integration, and practical Linux skills.
 The system is modular, extendable, and useful for real-world personal expense tracking.
