@@ -1,5 +1,5 @@
 # Information Security Course – Labs & Final Project
-
+Made By: Elaman Abdulloev ID 11421
 This repository contains all laboratory works and the final project completed for the **Information Security** course at AUCA.  
 The structure follows the course progression: hands-on Linux, system administration, automation, and secure coding practices.
 
@@ -20,10 +20,6 @@ Infosec/
 │
 └── README.md (this file)
 
-yaml
-Копировать код
-
----
 
 ## Final Project Overview  
 **Personal Expenses Reports Helper**
