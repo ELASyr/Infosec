@@ -1,0 +1,31 @@
+# Python virtual environments
+venv/
+*/venv/
+__pycache__/
+*.pyc
+
+# OS and editor files
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Byte-compiled / cache
+*.pyo
+*.pyd
+
+# Build artifacts
+*.sqlite
+*.db
+*.sqlite3
+
+# Results / generated files
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Environment variables / tokens
+.env
