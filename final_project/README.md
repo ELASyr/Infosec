@@ -1,14 +1,14 @@
-Personal Expenses Reports Helper
+# Personal Expenses Reports Helper
 
-Made by: Nurbolot Pirdinov
+Made by: Elaman Abdulloev
 Course: Information Security — Final Project
 
 This project is a personal expense-tracking utility designed for the AUCA Information Security course.
 It includes a terminal-based expense manager and a Telegram bot that sends automated weekly reports.
 All data is stored locally in a secure SQLite database.
 
-Features
-1. Terminal Interface
+##Features
+### 1. Terminal Interface
 
 Add expenses (category, amount, note, date)
 
@@ -18,17 +18,16 @@ View all saved expenses
 
 View statistics:
 
-Today / Yesterday
+Today / Yesterday totals
 
 Totals by category
 
-Last 7 days
+Last 7 days summary
 
 Generate pie chart of expenses
 
-Trigger Telegram weekly report manually
-
-2. Telegram Bot
+Manually trigger Telegram weekly report
+### 2. Telegram Bot
 
 Commands supported:
 
@@ -39,11 +38,11 @@ Commands supported:
 /stats
 /chart
 
-3. Automated Weekly Report
+### 3. Automated Weekly Report
 
 A cron task sends the weekly report to the user's Telegram account every Sunday.
 
-4. Secure Local Database
+### 4. Secure Local Database
 
 SQLite database (expenses.db)
 
@@ -51,11 +50,18 @@ Protected with parameterized SQL queries
 
 Tokens stored safely in .env
 
-Directory Layout
-personal_expenses/
-│
+##Directory Layout
+
+final_project/
 ├── database/
 │   └── expenses.db
+│
+├── screenshots/
+│   ├── add_expense.png
+│   ├── stats.png
+│   ├── chart.png
+│   ├── cron.png
+│   └── telegram.png
 │
 ├── src/
 │   ├── add_expense.py
@@ -68,7 +74,7 @@ personal_expenses/
 │
 └── README.md
 
-🔗 Video Demonstration
+##🔗 Video Demonstration
 
 You can watch the full implementation and usage of the Personal Expenses Tracker here:
 
@@ -76,7 +82,7 @@ You can watch the full implementation and usage of the Personal Expenses Tracker
 
 [![Watch the video](https://img.youtube.com/vi/tAw09zd34m4/0.jpg)](https://youtu.be/tAw09zd34m4)
 
-The video shows:
+## The video shows:
 
 CLI usage
 
