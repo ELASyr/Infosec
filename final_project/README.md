@@ -7,7 +7,7 @@ This project is a personal expense-tracking utility designed for the AUCA Inform
 It includes a terminal-based expense manager and a Telegram bot that sends automated weekly reports.
 All data is stored locally in a secure SQLite database.
 
-##Features
+## Features
 ### 1. Terminal Interface
 
 Add expenses (category, amount, note, date)
@@ -50,19 +50,16 @@ Protected with parameterized SQL queries
 
 Tokens stored safely in .env
 
-##Directory Layout
-
+## Directory Layout
 final_project/
 ├── database/
 │   └── expenses.db
-│
 ├── screenshots/
 │   ├── add_expense.png
 │   ├── stats.png
 │   ├── chart.png
 │   ├── cron.png
 │   └── telegram.png
-│
 ├── src/
 │   ├── add_expense.py
 │   ├── show_expenses.py
@@ -71,7 +68,6 @@ final_project/
 │   ├── send_weekly_report.py
 │   ├── menu.py
 │   └── bot.py
-│
 └── README.md
 
 ##🔗 Video Demonstration
@@ -108,7 +104,7 @@ Bot restricted to owner’s chat ID
 
 Local database only (no cloud exposure)
 
-Conclusion
+## Conclusion
 
 This project fulfills all requirements of the AUCA Information Security final assignment.
 It demonstrates secure programming, automation with cron, Telegram bot integration, and practical Linux skills.
